@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: '', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #534d4d;
+        }
+
+        /* Gallery Section Container */
+        .gallery-section {
+            padding: 70px 20px;
+            background-color: #f3f3f3;
+        }
+
+        /* Section Heading */
+        .gallery-heading {
+            text-align: center;
+            margin-bottom: 50px;
+            background-color:white;
+            box-shadow:#474747 1px 2px 8px 6px ;
+            border-radius: 5px;
+            padding:30px 5px;
+            background-color: rgb(30, 29, 29);
+        
+        }
+
+        .gallery-heading h2 {
+            font-size: 40px;
+            color: #333;
+            font-weight: 700;
+            position: relative;
+
+        }
+
+        .gallery-heading h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #f39c12;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+
+        .gallery-heading p {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+            line-height: 1.6;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Image Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Overlay Effect */
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+        footer {
+  text-align: center;
+  padding: 20px;
+  background: #171616;
+  color: #fff;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; ;">
+        <img style="width: 300px;; height: 100px;" src="images/SuvidhaLogo.png" alt="Suvidha Logo">
+    </div>
+    
+    <!-- Gallery Section -->
+    <div class="gallery-section">
+        <!-- Section Heading -->
+    <div >
+        <br>
+        <br>
+        <div class="gallery-heading">
+            <img style= "width: 120px; border-radius: 3px;"src="images/party.gif" alt="Logo 1" class="logo">
+            <h2 style="color: white;"";">Events</h2>
+            <p><a style="color: #f39c12;"href="index.html">Home</a> </p>
+            <p style="color: white;">Take a look at some of the impactful moments captured during our activities. Each image represents a step towards making a difference.</p>
+        </div>
+    </div>
+    
+
+        <!-- Image Grid -->
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <img src="images/Screenshot 2024-11-18 191234.png" alt="Free Workshops">
+                <div class="overlay">Free Workshops</div>
+            </div>
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <img src="images/SocialWork.jpg" alt="Books Distribution">
+                <div class="overlay">SocialWork\</div>
+            </div>
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <img src="images/even.png" alt="Online Events">
+                <div class="overlay">Online Events</div>
+            </div>
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+                <img src="images/Tree-Plantation.jpg" alt="Tree Plantation">
+                <div class="overlay">Tree Plantation</div>
+            </div>
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item">
+                <img src="images/Suvidha-event.jpg" alt="Volunteer Programs">
+                <div class="overlay">Suvidha Events</div>
+            </div>
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item">
+                <img src="images/anima.png" alt="Community Activities">
+                <div class="overlay">Animal Feeding</div>
+            </div>
+            <!-- Gallery Item 7 -->
+            <div class="gallery-item">
+                <img src="images/Fundraising.jpg" alt="Awareness Events">
+                <div class="overlay">Fundraising</div>
+            </div>
+            <!-- Gallery Item 8 -->
+            <div class="gallery-item">
+                <img src="images/Donation.jpg" alt="Education Support">
+                <div class="overlay">Donation</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Charity Organization. All Rights Reserved.</p>
+      </footer>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Donors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #0e0e0e;
+  background-color: #1515151b;
+}
+
+/* Header Section */
+header.donor-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('donor-bg.jpg') center/cover no-repeat;
+  height: 50vh;
+  color: #060606;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.donor-header .overlay {
+  text-align: center;
+}
+
+header.donor-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header.donor-header p {
+  font-size: 1.2rem;
+}
+
+header.donor-header p a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+header.donor-header p a:hover {
+  text-decoration: underline;
+}
+
+/* Thank You Section */
+.thank-you-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #f8f9fa, #ffffff);
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.thank-you-section h2 {
+  font-size: 2.5rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.thank-you-section p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Donor Table Section */
+.donor-table {
+  padding: 50px 20px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  background: linear-gradient(to right, #f8f9fa, #e8f0fe);
+}
+
+table th {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 15px;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+table tr:hover {
+  background: #f0f8ff;
+  transition: background 0.3s ease;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #171616;
+  color: #fff;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+/* Header Section */
+header.donor-header {
+  background: url('images/Donation.jpg') center/cover no-repeat; /* Add your image path here */
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+header.donor-header .overlay {
+  background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header.donor-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header.donor-header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+header.donor-header p a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header.donor-header p a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="donor-header">
+    <div class="overlay">
+      <h1>Meet Our Donors</h1>
+      <p><a href="index.html">Home</a> / Our Donors</p>
+    </div>
+  </header>
+  
+
+  <!-- Thank You Section -->
+  <section class="thank-you-section">
+    <img style= "width: 120px;"src="namaste.gif" alt="Logo 1" class="logo">
+    <h2 style="color: #e4ae0a;">Thank You For Your Contribution</h2>
+    <p>“Every contribution brings us closer to our goals”</p>
+  </section>
+
+ 
+
+
+  <!-- Donor List Section -->
+  <section class="donor-table">
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name of Donor</th>
+            <th>Amount of Donation (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>₹10,000</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>₹15,000</td>
+          </tr>
+          <tr>
+            <td>Akash Patel</td>
+            <td>₹5,000</td>
+          </tr>
+          <tr>
+            <td>Sophia Fernandes</td>
+            <td>₹25,000</td>
+          </tr>
+          <tr>
+            <td>Rahul Sharma</td>
+            <td>₹7,500</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Charity Organization. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
